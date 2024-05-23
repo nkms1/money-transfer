@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Money transfer service</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <image src="images/logo.png" class="logo">  
+            <h1> Money Transfer Service</h1>
+            <form id="transferForm">
+                <label for="sender">Sender Account:</label>
+                <input type="text" id="sender" name="sender" required>
+                <label for="senderCarrier">SenderCarrier</label>
+                <select id="senderCarrier" name="senderCarrier" required>
+                    <option value="">Select Carrier</option>
+                    <option value="AT&T">AT&T</option>
+                    <option value="Verizon">Verizon</option>
+                    <option value="T-Mobile">T-Mobile</option>
+                    <option value="Sprint">Sprint</option>
+                    <option value="Vodafone">Vodafone</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Telefonica">Telefonica</option>
+                    <option value="China Mobile">China Mobile</option>
+                    <option value="China Unicom">China Unicom</option>
+                    <option value="Reliance Jio">Reliance Jio</option>
+                    <option value="Airtel">Airtel</option>
+                    <option value="MTN">MTN</option>
+                    <option value="Telstra">Telstra</option>
+                    <option value="O2">O2</option>
+                    <option value="BT Mobile">BT Mobile</option>
+                    <option value="Deutsche Telekom">Deutsche Telekom</option>                    
+                </select>
+                <label for="senderCountry">senderCountry:</label>
+                <select id="senderCountry" name="senderCountry" required>
+                </select>
+                <label for="recipient">Recipient Account</label>
+                <input type="text" id="recipient" name="recipient" required>
+                <label for="recipientPhone">Recipient Phone Number:</label>
+                <input type="tel" id="recipientPhone" required>
+                <label for="recipientCarrier">recipientCarrier:</label>
+                <select id="recipientCarrier" required>
+                    <option value="">Select Carrier</option>
+                    <option value="AT&T">AT&T</option>
+                    <option value="Verizon">Verizon</option>
+                    <option value="T-Mobile">T-Mobile</option>
+                    <option value="Sprint">Sprint</option>
+                    <option value="Vodafone">Vodafone</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Telefonica">Telefonica</option>
+                    <option value="China Mobile">China Mobile</option>
+                    <option value="China Unicom">China Unicom</option>
+                    <option value="Reliance Jio">Reliance Jio</option>
+                    <option value="Airtel">Airtel</option>
+                    <option value="MTN">MTN</option>
+                    <option value="Telstra">Telstra</option>
+                    <option value="O2">O2</option>
+                    <option value="BT Mobile">BT Mobile</option>
+                    <option value="Deutsche Telekom">Deutsche Telekom</option>
+    
+                </select>
+                <label for="recipientCountry">Recipient Country:</label>
+                <select id="recipientCountry" name="recipientCountry" required></select>
+                <label for="amount" >Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+                <button type="submit">Send</button>
+            </form>
+            <p id="message"></p>
+            </div>
+            <script src="script.js"></script>
+    </body>
+
+</html>
